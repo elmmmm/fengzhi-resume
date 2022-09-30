@@ -1,6 +1,6 @@
 <template>
   <div class="title-operate-icon ">
-    <div @click="addPartItem" class="icon-item add-icon">
+    <div @click.stop="addPartItem" class="icon-item add-icon">
       <i class="iconfont icon-tianjia"></i>
     </div>
   </div>

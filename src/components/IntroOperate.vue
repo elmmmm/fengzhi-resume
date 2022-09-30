@@ -1,9 +1,9 @@
 <template>
   <div class="title-operate-icon">
-    <div @click="addIntroItem" class="icon-item add-icon">
+    <div @click.stop="addIntroItem" class="icon-item add-icon">
       <i class="iconfont icon-tianjia"></i>
     </div>
-    <div @click="delIntroItem" class="icon-item delete-icon">
+    <div @click.stop="delIntroItem" class="icon-item delete-icon">
       <i class="iconfont icon-shanchu1"></i>
     </div>
   </div>

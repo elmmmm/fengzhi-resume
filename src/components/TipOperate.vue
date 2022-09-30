@@ -1,6 +1,6 @@
 <template>
   <div class="title-operate-icon">
-    <div @click="delDes" class="icon-item delete-icon">
+    <div @click.stop="delDes" class="icon-item delete-icon">
       <i class="iconfont icon-shanchu1"></i>
     </div>
   </div>
