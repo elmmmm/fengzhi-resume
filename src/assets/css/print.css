@@ -1,0 +1,21 @@
+@media print {
+  @page {
+    size: A4 portrait;
+    margin: 0;
+  }
+  .el-header {
+    display: none !important;
+  }
+  .el-row {
+    padding: 0;
+  }
+  .right {
+    display: none !important;
+  }
+  #page {
+    border: none !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    transform: scale(1) !important;
+  }
+}

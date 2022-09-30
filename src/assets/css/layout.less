@@ -1,0 +1,103 @@
+.el-header {
+  position: sticky;
+  top: 0;
+  z-index: 99;
+  box-shadow: 0px 0px 5px;
+  // background-color:#202329; // #94d2bd;
+  // background-image: linear-gradient(to right, #1660c3 0%, #1c87ef 100%);
+  // background-image: linear-gradient(25deg, #824eff, #7c88f9, #65b9f1, #00e8e8)
+  // background-image: linear-gradient(25deg, #002be1, #3960ec, #4790f6, #43c0ff)
+  background-image: linear-gradient(25deg, #8a62f8, #8094f6, #66c1f4, #0becf0)
+  // background-image: linear-gradient(30deg, #1e2fd2, #4e71dd, #5bb0e6, #51f0ed)
+  // background-image: linear-gradient(to right, #0acffe 0%, #495aff 100%);
+  // background-image: linear-gradient(-225deg, #77FFD2 0%, #6297DB 48%, #1EECFF 100%);
+  // background-image: linear-gradient(48deg, #343cff, #577bed, #54b2da, #00e9c3)
+}
+
+.el-row {
+  padding: 10px 14px;
+  .right {
+    position: sticky;
+    top: 70px;
+  }
+}
+
+// 悬浮显示按钮组
+.all-operate-wrapper {
+  position: relative;
+  &:hover .title-operate-icon {
+    display: block;
+  }
+  .title-operate-icon {
+    display: none; 
+    position: absolute;
+    top: 40%;
+    right: 0;
+    transform: translateY(-50%);
+
+    .icon-item {
+      cursor: pointer;
+      display: inline-block;
+      width: 22px;
+      height: 22px;
+      background-color: #505667;
+      color: white;
+      border-radius: 4px;
+      margin-right: 6px;
+      text-align: center;
+      font-size: 20px;
+      line-height: 22px;
+      &:hover {
+        background-color: #737885;
+      }
+    }
+  }
+}
+
+//简历元素page占位
+//简历宽高，差不多和A4等比例（A4大小 210mm×297mm）
+// @width: 794px;
+// @height: 1123px;
+
+#page {
+  // width: @width;
+  // min-height: @height;
+  width: 210mm;
+  height: 297mm;
+  background-color: white;
+  overflow: hidden;
+}
+
+.cvborder{
+  border: 1px dashed #ff4b00;
+}
+
+#page[color-mode="grey"]{
+  --themeColor: #4c6b90;;
+}
+#page[color-mode="pink"]{
+  --themeColor: #e89396;
+}
+#page[color-mode="blue"]{
+  --themeColor: #4686ff;
+}
+#page[color-mode="purple"]{
+  --themeColor: #9c5bde;
+}
+
+/* 滚动槽 */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  border-radius: 3px;
+  background: #f7f7f7;
+  box-shadow: inset 0 0 5px rgba(0,0,0,0.08);
+}
+/* 滚动条滑块 */
+::-webkit-scrollbar-thumb {
+  border-radius: 3px;
+  background: #c1c1c1;//rgba(60, 128, 147, 0.911);
+  box-shadow: inset 0 0 10px rgba(0,0,0,0.2);
+}
