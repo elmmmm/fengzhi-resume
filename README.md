@@ -1,24 +1,28 @@
-# myresume
+# 风植在线简历🧩
+>一款在线简历编辑、生成工具，哪里要改点哪里，妈妈再也不用担心我的简历~
+>**技术栈：「Vue2(vuex) + ElementUI + jsoneditor + jspdf」**
+**立即体验👉 [>点我点我<](https://elmmmm.github.io/fengzhi-resume/)**
+## 功能特点
+- 🎯哪里要改点哪里，简单易用
+- 📐实时预览、实时同步修改，所见即所得
+- 🎨简约清新主题和模板
+- 🧶导出PDF，保留JSON
+- 🎏......
 
-## Project setup
-```
-yarn install
-```
+### 现有模板
+两个😂
+![image](./src/assets/img/cvImg.jpg)
 
-### Compiles and hot-reloads for development
+### 源码使用
+>基于 vue-cli 脚手架构建
 ```
-yarn serve
-```
+# 安装依赖
+npm i
 
-### Compiles and minifies for production
-```
-yarn build
-```
+# 运行项目
+npm run serve
 
-### Lints and fixes files
+# 打包
+npm run build
 ```
-yarn lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+See [vue-cli Configuration Reference](https://cli.vuejs.org/config/).
